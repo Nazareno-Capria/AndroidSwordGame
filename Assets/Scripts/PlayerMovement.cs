@@ -106,7 +106,5 @@ public class PlayerMovement : MonoBehaviour
            
             //Vector3 vector = new Vector3(playerTransform.rotation.x, playerTransform.rotation.y, angle);
             this.transform.right = lookAtDir;
-        }
-
-
     }
+}
