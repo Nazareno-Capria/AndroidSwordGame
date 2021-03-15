@@ -252,13 +252,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sword: {fileID: 937770432}
-  rotationSpeed: 50
+  rotationSpeed: 5
   canMove: 1
   isRotating: 0
   rotateTo: {x: 0, y: 0, z: 0}
   angle: 0
   quatToRotate: {x: 0, y: 0, z: 0, w: 0}
   startRotation: {x: 0, y: 0, z: 0, w: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  dir: {x: 0, y: 0}
+  dotProd: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
