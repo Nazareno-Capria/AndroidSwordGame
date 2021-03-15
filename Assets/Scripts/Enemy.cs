@@ -6,7 +6,10 @@ public class Enemy : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField]
-    private float speed;
+    private float speed = 1;
+    [SerializeField]
+    private int damage = 1;
+
     private Vector3 playerPosition;
     // Start is called before the first frame update
     private void Awake()
@@ -21,15 +24,27 @@ public class Enemy : MonoBehaviour
 
     public void MoveToPosition(Vector3 position)
     {
-        Debug.Log(position);
         rb.velocity = (position - transform.position).normalized * speed;
+    }
+    private void MakeDamage(PlayerController player)
+    {
+        player.TakeDamage(damage);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Me choque con " + collision.gameObject.layer.ToString());
+        LayerMask collisionMask = collision.gameObject.layer;
+        Debug.Log("Layer" + LayerMask.LayerToName(collisionMask));
+        if (LayerMask.LayerToName(collisionMask).Equals("Sword"))
+        {
+            Debug.Log("Golpie con la espada y me destrui");
+            Destroy(gameObject);
+        }else if (LayerMask.LayerToName(collisionMask).Equals("Player"))
+        {
+            Debug.Log("Golpie con el jugador, le hice daño y me destrui");
+            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            MakeDamage(player);
+            Destroy(gameObject);
+        }
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Me choque con " + collision.gameObject.layer.ToString());
-    }
+
 }
