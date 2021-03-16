@@ -46,7 +46,6 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("Golpie con el jugador, le hice daño y me destrui");
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-<<<<<<< HEAD
             try
             {
                 MakeDamage(player);
@@ -55,7 +54,7 @@ public class Enemy : MonoBehaviour
             {
                 Debug.LogWarning("El enemigo impacto con el jugador, pero estaba destruido");
             }
-=======
+
             MakeDamage(player);
             Explode();
             Destroy(gameObject);
