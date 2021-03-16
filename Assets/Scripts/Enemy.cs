@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -45,8 +46,22 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("Golpie con el jugador, le hice daño y me destrui");
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+<<<<<<< HEAD
+            try
+            {
+                MakeDamage(player);
+            }
+            catch (Exception)
+            {
+                Debug.LogWarning("El enemigo impacto con el jugador, pero estaba destruido");
+            }
+=======
             MakeDamage(player);
             Explode();
+<<<<<<< HEAD
+=======
+>>>>>>> 0e069982129d3cac8f03a0484b746553cebbb10b
+>>>>>>> 0f734a58eef4c7e45e96302c3b5bb12e3216185d
             Destroy(gameObject);
         }
     }
