@@ -58,10 +58,6 @@ public class Enemy : MonoBehaviour
 =======
             MakeDamage(player);
             Explode();
-<<<<<<< HEAD
-=======
->>>>>>> 0e069982129d3cac8f03a0484b746553cebbb10b
->>>>>>> 0f734a58eef4c7e45e96302c3b5bb12e3216185d
             Destroy(gameObject);
         }
     }
