@@ -128,7 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9306404ec976e5f44bfc8ec9d79bde53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blowEffect: {fileID: 8543040614118397471, guid: fd55da85752c85e43aed534b2dc32e9b, type: 3}
   speed: 0
+  health: 0
 --- !u!50 &3975732203109415357
 Rigidbody2D:
   serializedVersion: 4
