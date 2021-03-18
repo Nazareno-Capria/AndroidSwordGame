@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 17452285}
   - component: {fileID: 17452283}
   - component: {fileID: 17452284}
-  - component: {fileID: 17452279}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
@@ -127,7 +126,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8060953097822256602}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9306404ec976e5f44bfc8ec9d79bde53, type: 3}
   m_Name: 
@@ -4999,24 +4998,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &17452279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8060953097822256602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eabc12d3dd3803a479eb50c9f76b6a53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  blowEffect: {fileID: 8543040614118397471, guid: fd55da85752c85e43aed534b2dc32e9b, type: 3}
-  speed: 2
-  health: 10
-  damage: 1
-  playerPosition: {x: 0, y: 0, z: 0}
-  sword: {fileID: 0}
-  hitForceSpeed: 4
-  swordPos: {x: 0, y: 0, z: 0}
