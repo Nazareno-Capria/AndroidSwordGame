@@ -11,12 +11,11 @@ public class LevelController : MonoBehaviour
 
     private bool wavesFinished = false;
     private float time;
-    private Wave actualWave = null;
+    private Wave actualWave;
 
     private void Start()
     {
-        if (actualWave == null)
-            actualWave = waves[0];
+        actualWave = waves[0];
     }
     private void Update()
     {
@@ -28,7 +27,7 @@ public class LevelController : MonoBehaviour
         time += Time.deltaTime;
         if (time >= actualWave.timebetweenEnemys)
         {
-            SpawnEnemys(spawnPoints[Random.Range(0,spawnPoints.Count - 1)]);
+            SpawnEnemys();
             time = 0;
         }
 
@@ -36,16 +35,17 @@ public class LevelController : MonoBehaviour
 
     private void NextWave()
     {
-        int nextIndex = waves.FindIndex(x => x = actualWave) + 1;
+        int nextIndex = waves.FindIndex(x => x.id == actualWave.id) + 1;
         if (nextIndex < waves.Count)
-            actualWave = waves[waves.FindIndex(x => x = actualWave) + 1];
+            actualWave = waves[waves.FindIndex(x => x.id == actualWave.id) + 1];
         else
             wavesFinished = true;
     }
-    private void SpawnEnemys(GameObject spawnPoint)
+    private void SpawnEnemys()
     {
         for (int i = 0; i < actualWave.enemysSpawnQuantity; i++)
         {
+            var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count - 1)];
             if (actualWave.enemyQuantity > 0)
             {
                 var posibleEnemys = actualWave.posibleEnemys;

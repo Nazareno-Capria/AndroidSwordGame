@@ -1,34 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wave : MonoBehaviour
+[Serializable]
+public struct Wave 
 {
-    [SerializeField]
+    public int id; //Me gustaria hacer esto de otra forma ya se podrian agregar valores iguales y romperia la logica
     public List<GameObject> posibleEnemys;
-    [SerializeField]
     public int enemyQuantity;
-    [SerializeField]
     public float timebetweenEnemys;
-    [SerializeField]
     public int enemysSpawnQuantity;
-
-    public bool isFinished = false;
-
-    private void Awake()
-    {
-        posibleEnemys = new List<GameObject>();
-    }
-
-    private void Update()
-    {
-        if (isFinished)
-            return;
-        
-    }
-
-    private void SpawnEnemys(GameObject spawnPoint)
-    {
-        
-    }
+    public bool isFinished;
 }
