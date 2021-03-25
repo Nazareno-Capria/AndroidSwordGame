@@ -39,12 +39,12 @@ public class Enemy : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Me choque con " + collision.gameObject.tag);
+      //  Debug.Log("Me choque con " + collision.gameObject.tag);
         LayerMask collisionMask = collision.gameObject.layer;
-        Debug.Log("Layer" + LayerMask.LayerToName(collisionMask));
+       // Debug.Log("Layer" + LayerMask.LayerToName(collisionMask));
         if (LayerMask.LayerToName(collisionMask).Equals("Player"))
         {
-            Debug.Log("Golpie con el jugador, le hice daño y me destrui");
+          //  Debug.Log("Golpie con el jugador, le hice daño y me destrui");
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             try
             {
@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
             }
             catch (Exception)
             {
-                Debug.LogWarning("El enemigo impacto con el jugador, pero estaba destruido");
+       //         Debug.LogWarning("El enemigo impacto con el jugador, pero estaba destruido");
             }
 
             MakeDamage(player);

@@ -25,7 +25,7 @@ public class BulletEnemy : Enemy
     }
     public new void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Me golpeó con " + collision.gameObject.tag);
+        //Debug.Log("Me golpeó con " + collision.gameObject.tag);
         if (collision.gameObject.tag == "Sword")
         {
             TakeDamage(damage);
