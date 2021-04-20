@@ -1,19 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/Nazareno/Desktop/Nazareno Capria/New Unity Project/Packages/manifest.json
+    m_FilePath: C:/Users/Nazareno/Desktop/src/AndroidSwordGame-main/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637504889362106817
+      ticks: 637522956700000000
     m_Hash: 301754631
   m_LockFileStatus:
-    m_FilePath: C:/Users/Nazareno/Desktop/Nazareno Capria/New Unity Project/Packages/packages-lock.json
+    m_FilePath: C:/Users/Nazareno/Desktop/src/AndroidSwordGame-main/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637522846239495906
+      ticks: 637545462496883784
     m_Hash: 2377035843
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.0.4
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.2d.animation@5.0.4
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.2d.animation@5.0.4
       assetPath: Packages/com.unity.2d.animation
       name: com.unity.2d.animation
       displayName: 2D Animation
@@ -94,6 +94,7 @@ m_PackageAssets:
         - 5.0.4
         - 6.0.0-pre.1
         - 6.0.0-pre.2
+        - 6.0.1
         compatible:
         - 5.0.4
         verified: 5.0.4
@@ -155,7 +156,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.0.1
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1
       assetPath: Packages/com.unity.2d.pixel-perfect
       name: com.unity.2d.pixel-perfect
       displayName: 2D Pixel Perfect
@@ -193,6 +194,7 @@ m_PackageAssets:
         - 4.0.1
         - 5.0.0-pre.1
         - 5.0.0-pre.2
+        - 5.0.0
         compatible:
         - 4.0.1
         verified: 4.0.1
@@ -228,7 +230,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.0.2
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.2d.psdimporter@4.0.2
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.2d.psdimporter@4.0.2
       assetPath: Packages/com.unity.2d.psdimporter
       name: com.unity.2d.psdimporter
       displayName: 2D PSD Importer
@@ -277,6 +279,7 @@ m_PackageAssets:
         - 4.0.2
         - 5.0.0-pre.1
         - 5.0.0-pre.2
+        - 5.0.1
         compatible:
         - 4.0.2
         verified: 4.0.2
@@ -388,7 +391,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.1.1
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.2d.spriteshape@5.1.1
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.2d.spriteshape@5.1.1
       assetPath: Packages/com.unity.2d.spriteshape
       name: com.unity.2d.spriteshape
       displayName: 2D SpriteShape
@@ -452,6 +455,7 @@ m_PackageAssets:
         - 5.1.1
         - 6.0.0-pre.1
         - 6.0.0-pre.2
+        - 6.0.0
         compatible:
         - 5.1.1
         verified: 5.1.1
@@ -567,7 +571,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -662,7 +666,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -765,7 +769,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.5
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -836,7 +840,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -905,7 +909,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.1
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.mobile.android-logcat@1.2.1
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.mobile.android-logcat@1.2.1
       assetPath: Packages/com.unity.mobile.android-logcat
       name: com.unity.mobile.android-logcat
       displayName: Android Logcat
@@ -979,7 +983,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.2
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.mobile.notifications@1.3.2
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.mobile.notifications@1.3.2
       assetPath: Packages/com.unity.mobile.notifications
       name: com.unity.mobile.notifications
       displayName: Mobile Notifications
@@ -1095,7 +1099,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.22
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.test-framework@1.1.22
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.test-framework@1.1.22
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1184,7 +1188,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.1
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.textmeshpro@3.0.1
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.textmeshpro@3.0.1
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1255,6 +1259,7 @@ m_PackageAssets:
         - 1.5.1
         - 1.5.3
         - 1.5.4
+        - 1.5.5
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -1274,6 +1279,7 @@ m_PackageAssets:
         - 2.1.1
         - 2.1.3
         - 2.1.4
+        - 2.1.5
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -1289,11 +1295,13 @@ m_PackageAssets:
         - 3.0.1
         - 3.0.3
         - 3.0.4
+        - 3.0.5
         compatible:
         - 3.0.1
         - 3.0.3
         - 3.0.4
-        verified: 3.0.4
+        - 3.0.5
+        verified: 3.0.5
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
@@ -1335,7 +1343,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.6
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.timeline@1.4.6
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.timeline@1.4.6
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1395,6 +1403,7 @@ m_PackageAssets:
         - 1.4.4
         - 1.4.5
         - 1.4.6
+        - 1.4.7
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1410,6 +1419,7 @@ m_PackageAssets:
         - 1.6.0-pre.3
         compatible:
         - 1.4.6
+        - 1.4.7
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1423,7 +1433,7 @@ m_PackageAssets:
         - 1.5.4
         - 1.6.0-pre.1
         - 1.6.0-pre.3
-        verified: 1.4.6
+        verified: 1.4.7
       dependencies:
       - name: com.unity.modules.director
         version: 1.0.0
@@ -3278,7 +3288,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3294,8 +3304,18 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.1.5-preview
+        - 0.1.6-preview
+        - 0.1.9-preview
+        - 1.0.0
+        - 1.0.5
         - 1.0.6
         compatible:
+        - 0.1.5-preview
+        - 0.1.6-preview
+        - 0.1.9-preview
+        - 1.0.0
+        - 1.0.5
         - 1.0.6
         verified: 1.0.6
       dependencies: []
@@ -3316,7 +3336,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637429759280000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3329,7 +3349,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.1.0
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.mathematics@1.1.0
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -3345,9 +3365,33 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.0.12-preview.2
+        - 0.0.12-preview.5
+        - 0.0.12-preview.8
+        - 0.0.12-preview.10
+        - 0.0.12-preview.11
+        - 0.0.12-preview.13
+        - 0.0.12-preview.17
+        - 0.0.12-preview.19
+        - 0.0.12-preview.20
+        - 1.0.0-preview.1
+        - 1.0.1
+        - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
         compatible:
+        - 0.0.12-preview.2
+        - 0.0.12-preview.5
+        - 0.0.12-preview.8
+        - 0.0.12-preview.10
+        - 0.0.12-preview.11
+        - 0.0.12-preview.13
+        - 0.0.12-preview.17
+        - 0.0.12-preview.19
+        - 0.0.12-preview.20
+        - 1.0.0-preview.1
+        - 1.0.1
+        - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
         verified: 1.2.1
@@ -3367,7 +3411,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 636984649280000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3380,7 +3424,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.3
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.2d.common@4.0.3
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.2d.common@4.0.3
       assetPath: Packages/com.unity.2d.common
       name: com.unity.2d.common
       displayName: 2D Common
@@ -3396,8 +3440,25 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 1.0.9-preview.1
+        - 1.0.9-preview.2
+        - 1.0.10-preview
+        - 1.0.11-preview.1
+        - 1.1.0-preview.1
+        - 1.1.0-preview.2
+        - 1.2.0-preview.1
+        - 2.0.1
+        - 2.0.2
+        - 2.1.0
+        - 3.0.0
+        - 3.0.1
+        - 4.0.0
+        - 4.0.1
         - 4.0.2
         - 4.0.3
+        - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
         compatible:
         - 4.0.2
         - 4.0.3
@@ -3434,7 +3495,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637408843940000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3447,7 +3508,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.1
       source: 1
-      resolvedPath: C:\Users\Nazareno\Desktop\Nazareno Capria\New Unity Project\Library\PackageCache\com.unity.2d.path@4.0.1
+      resolvedPath: C:\Users\Nazareno\Desktop\src\AndroidSwordGame-main\Library\PackageCache\com.unity.2d.path@4.0.1
       assetPath: Packages/com.unity.2d.path
       name: com.unity.2d.path
       displayName: 2D Path
@@ -3463,7 +3524,23 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 1.0.0-preview.1
+        - 1.0.0-preview.4
+        - 2.0.1
+        - 2.0.2
+        - 2.0.3
+        - 2.0.4
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 3.0.0
+        - 3.0.1
+        - 3.0.2
+        - 4.0.0
         - 4.0.1
+        - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
         compatible:
         - 4.0.1
         verified: 4.0.1
@@ -3484,7 +3561,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637328350450000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3494,5 +3571,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/Nazareno/Desktop/Nazareno Capria/New Unity Project/Packages
+m_ProjectPath: C:/Users/Nazareno/Desktop/src/AndroidSwordGame-main/Packages
 m_EditorVersion: 2020.2.6f1 (8a2143876886)
