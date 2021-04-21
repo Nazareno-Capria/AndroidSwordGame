@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         rotateTo = new Vector3();
         //lr.material = new Material(Shader.Find("Sprites/Defautl"));
         //lr.widthMultiplier = 0.2f;
-        //lr.positionCount = 2;
+        lr.positionCount = 2;
         Gradient gradient = new Gradient();
         Color violeta = new Color(179, 136, 255);
 
@@ -51,21 +51,30 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
-            lr.positionCount = 2;
             pointA = Camera.main.ScreenToWorldPoint(Input.touches[0].position);
-            lr.SetPosition(0, pointA);
-            lr.enabled = true;
+            if (!PauseMenu.GameIsPaused)
+            {
+                lr.SetPosition(0, pointA);
+                lr.enabled = true;
+            }
+            
         }
         if(Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Moved)
         {
             touchStart = true;
             pointB = Camera.main.ScreenToWorldPoint(Input.touches[0].position);
-            lr.SetPosition(1, pointB);
+            if (!PauseMenu.GameIsPaused)
+            {
+                lr.SetPosition(1, pointB);
+            }
 
         }
         if(Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Ended)
         {
-            lr.enabled = false;
+            if (!PauseMenu.GameIsPaused)
+            {
+                lr.enabled = false;
+            }
             touchStart = false;
         }
         //else 
