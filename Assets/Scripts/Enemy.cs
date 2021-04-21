@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     public int damage = 1;
 
     public Vector3 playerPosition;
-    
+    public PlayerController pController;   
     // Start is called before the first frame update
     private void Awake()
     {
@@ -33,41 +33,41 @@ public class Enemy : MonoBehaviour
     {
         rb.velocity = (position - transform.position).normalized * speed;
     }
-    private void MakeDamage(PlayerController player)
+    public  void MakeDamage(PlayerController player)
     {
         player.TakeDamage(damage);
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        pController = collision.GetComponentInParent<PlayerController>();
+
+        if (collision.gameObject.tag.Equals("Sword"))
+        {  
+            TakeDamage(1);
+        }
+
+    }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-      //  Debug.Log("Me choque con " + collision.gameObject.tag);
-        LayerMask collisionMask = collision.gameObject.layer;
-       // Debug.Log("Layer" + LayerMask.LayerToName(collisionMask));
-        if (LayerMask.LayerToName(collisionMask).Equals("Player"))
+        if (collision.gameObject.tag.Equals("Player"))
         {
-          //  Debug.Log("Golpie con el jugador, le hice daño y me destrui");
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            try
-            {
-                MakeDamage(player);
-            }
-            catch (Exception)
-            {
-       //         Debug.LogWarning("El enemigo impacto con el jugador, pero estaba destruido");
-            }
-
-            MakeDamage(player);
+            PlayerController pController = collision.gameObject.GetComponent<PlayerController>();
+            MakeDamage(pController);
             Explode();
             Destroy(gameObject);
         }
     }
-    public void OnTriggerEnter2D(Collider2D collision)
+    private void TakeDamage(int damage)
     {
-        //Debug.Log("Me cortó  " + collision.gameObject.tag);
-        //if(collision.gameObject.tag == "Sword")
-        //{
-        //    Explode();
-        //    Destroy(gameObject);
-        //}   
+        health -= damage;
+        if (health <= 0)
+        {
+            pController.SetScore(pController.GetScore() + 1);
+            Explode();
+            Destroy(gameObject);
+
+        }
     }
     public void Explode()
     {

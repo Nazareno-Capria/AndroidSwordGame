@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eabc12d3dd3803a479eb50c9f76b6a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 695091000135926374}
   blowEffect: {fileID: 8543040614118397471, guid: fd55da85752c85e43aed534b2dc32e9b, type: 3}
   speed: 2
-  health: 10
+  health: 3
   damage: 1
   playerPosition: {x: 0, y: 0, z: 0}
+  pController: {fileID: 0}
   hitForceSpeed: 4
+  retractionTime: 0.75
 --- !u!1001 &4506369070295595995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29,6 +31,18 @@ PrefabInstance:
     - target: {fileID: 17452279, guid: 2917021c6b0e11f44a6dbb6f7f33693b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 17452283, guid: 2917021c6b0e11f44a6dbb6f7f33693b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 17452283, guid: 2917021c6b0e11f44a6dbb6f7f33693b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 17452283, guid: 2917021c6b0e11f44a6dbb6f7f33693b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7019608
       objectReference: {fileID: 0}
     - target: {fileID: 4022680789621213032, guid: 2917021c6b0e11f44a6dbb6f7f33693b, type: 3}
       propertyPath: m_RootOrder
@@ -88,5 +102,10 @@ PrefabInstance:
 --- !u!1 &5861317168880223745 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8060953097822256602, guid: 2917021c6b0e11f44a6dbb6f7f33693b, type: 3}
+  m_PrefabInstance: {fileID: 4506369070295595995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &695091000135926374 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3975732203109415357, guid: 2917021c6b0e11f44a6dbb6f7f33693b, type: 3}
   m_PrefabInstance: {fileID: 4506369070295595995}
   m_PrefabAsset: {fileID: 0}

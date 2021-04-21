@@ -7,6 +7,8 @@ public class BulletEnemy : Enemy
 
     private GameObject sword;
     public float hitForceSpeed;
+
+    public float retractionTime;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -28,26 +30,32 @@ public class BulletEnemy : Enemy
         //Debug.Log("Me golpeó con " + collision.gameObject.tag);
         if (collision.gameObject.tag == "Sword")
         {
-            TakeDamage(damage);
+            pController = collision.GetComponentInParent<PlayerController>();
+            TakeDamage(1);
         }
     }
+
     private void TakeDamage(int damage)
     {
         health -= damage;
         if(health <= 0)
         {
+            pController.SetScore(pController.GetScore() + 1);
+            Explode();
             Destroy(gameObject);
+
         }
         else
         {
             HitMove();
         }
     }
+
     private void HitMove()
     {
         Vector3 rbVelocity = (transform.position - sword.transform.position).normalized;
         rb.velocity = rbVelocity * hitForceSpeed;
-        Invoke("MoveToPlayer", 0.5f);
+        Invoke("MoveToPlayer", 0.75f);
     }
     private void MoveToPlayer()
     {

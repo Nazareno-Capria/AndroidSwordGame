@@ -57,11 +57,11 @@ public class LevelController : MonoBehaviour
     {
         for (int i = 0; i < actualWave.enemysSpawnQuantity; i++)
         {
-            var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count - 1)];
+            var spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
             if (actualWave.enemyQuantity > 0)
             {
                 var posibleEnemys = actualWave.GetPosibleEnemys();
-                Instantiate(posibleEnemys[Random.Range(0, posibleEnemys.Count - 1)], spawnPoint.transform);
+                Instantiate(posibleEnemys[Random.Range(0, posibleEnemys.Count)], spawnPoint.transform);
                 actualWave.RemoveEnemy();//Aca talvez estoy rompiendo un par de reglas sobre encapsulamiento
                 //solo un par?
             }
